@@ -1,4 +1,4 @@
-import React, { createElement } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 const Greeting = () => {
   return <h2>Hi there</h2>;
