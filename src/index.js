@@ -1,17 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import img1 from './images/book-1.jpg';
-import img2 from './images/book-2.jpg';
-import img3 from './images/book-3.jpg';
-
-const books = [img1, img2, img3];
+import Book from './Book';
+import books from './books.js';
 
 const BookList = () => (
   <ul>
-    {books.map((item) => (
-      <li>
-        <img src={item}></img>
-      </li>
+    {books.map((book) => (
+      <Book book={book} key={book.id} />
     ))}
   </ul>
 );
