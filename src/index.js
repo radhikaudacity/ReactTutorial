@@ -6,7 +6,7 @@ import books from './books.js';
 const BookList = () => (
   <ul>
     {books.map((book) => (
-      <Book book={book} key={book.id} />
+      <Book {...book} key={book.id} />
     ))}
   </ul>
 );
