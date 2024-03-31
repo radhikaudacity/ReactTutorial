@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Book from './Book';
 import books from './books.js';
 import InputEvent from './InputEvent.js';
+import './index.css';
 
 const displayTitle = (id) =>
   console.log(books.find((book) => book.id === id).title);

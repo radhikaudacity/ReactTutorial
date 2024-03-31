@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Book = ({ author, title, id, img, displayTitle }) => (
-  <li>
+  <li className='card'>
     <div style={{ textAlign: 'center' }}>
       <h2>{author}</h2>
       <h2>{title}</h2>
