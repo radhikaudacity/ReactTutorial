@@ -35,11 +35,15 @@ img {
   object-fit: cover;
 }
 .redCorner {
-  width: 20px;
+  width: 25px;
   text-align: center;
+  align-items: center;
   position: absolute;
   background-color: red;
   color: white;
   top: 0;
   left: 0;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0.2rem;
 }
