@@ -11,9 +11,9 @@ const displayTitle = (id) =>
 const BookList = () => (
   <>
     <InputEvent />
-    <ul>
-      {books.map((book) => (
-        <Book {...book} key={book.id} displayTitle={displayTitle} />
+    <ul className='bookList'>
+      {books.map((book, index) => (
+        <Book {...{ ...book, displayTitle, index }} key={book.id} />
       ))}
     </ul>
   </>
